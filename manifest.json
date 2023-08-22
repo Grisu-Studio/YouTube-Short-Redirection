@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Short Redirection",
+    "version": "1.0",
+    "description": "Redirects YouTube shorts URL to regular video URL",
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/icon.png"
+        }
+    },
+    "host_permissions": [
+        "https://www.youtube.com/*"
+    ]
+}

@@ -17,6 +17,10 @@ checkbox.addEventListener("change", function () {
     chrome.storage.local.set({ autoRedirect: checkbox.checked });
 });
 
+// Fetching the saved preference when popup is opened
 chrome.storage.local.get("autoRedirect", function (data) {
-    checkbox.checked = data.autoRedirect || false;
+    // Check if data and the autoRedirect key are not undefined
+    if (data && typeof data.autoRedirect !== 'undefined') {
+        checkbox.checked = data.autoRedirect;
+    }
 });

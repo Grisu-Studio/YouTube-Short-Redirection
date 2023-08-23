@@ -35,3 +35,27 @@ A simple Chrome extension to convert YouTube short URLs to the full video URLs a
 ## License
 
 Apache License. See `LICENSE` for more information.
+
+## Permissions Explained
+
+For clarity and transparency, here's a brief justification for each of the permissions and host permissions required by this extension:
+
+### Permissions:
+
+1. **tabs**:
+   - **Purpose**: To interact with browser tabs. This enables operations like querying for currently open tabs, opening new ones, or updating existing tabs.
+   - **Usage in Extension**: Enables the functionality to redirect from a YouTube short video URL to its standard format and to open the transformed URL in a new tab.
+
+2. **activeTab**:
+   - **Purpose**: Provides temporary access to the current active tab when the user invokes the extension.
+   - **Usage in Extension**: Determines if the current URL is a YouTube short URL and performs the redirection operation.
+
+3. **storage**:
+   - **Purpose**: Allows the extension to use the Chrome `storage` API to save and retrieve data.
+   - **Usage in Extension**: Saves and retrieves the user's "Auto redirect" choice, ensuring the extension remembers user preferences.
+
+### Host Permissions:
+
+1. **https://www.youtube.com/***:
+   - **Purpose**: Grants the extension access to pages under the `youtube.com` domain.
+   - **Usage in Extension**: Ensures the extension can detect and act on YouTube short URLs, transforming them to their corresponding standard format.

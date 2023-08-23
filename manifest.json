@@ -1,8 +1,8 @@
 {
-    "manifest_version": 3,
-    "name": "YouTube Short Redirection",
+    "name": "YouTube Short Redirector From Shorts to Clips",
     "version": "1.0",
-    "description": "Redirects YouTube shorts URL to regular video URL",
+    "description": "A simple Chrome extension to convert YouTube short URLs to the full video URLs and optionally auto-redirect.",
+    "manifest_version": 3,
     "permissions": [
         "tabs",
         "activeTab",
@@ -14,7 +14,11 @@
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
-            "16": "/images/icon.png"
+            "16": "images/icon16.png",
+            "32": "images/icon32.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png",
+            "256": "images/icon.png"
         }
     },
     "host_permissions": [

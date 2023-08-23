@@ -1,8 +1,8 @@
-# YouTube Short Redirector - From Shorts to Full Clips
+# [YouTube Short Redirector - From Shorts to Full Clips](https://chrome.google.com/webstore/detail/youtube-short-redirector/mnijpcchboaebolejillacjcmngnhppg/)
 
-![Icon128.png](images/icon128.png)
+[![Icon128.png](images/icon128.png)](https://chrome.google.com/webstore/detail/youtube-short-redirector/mnijpcchboaebolejillacjcmngnhppg/)
 
-A simple Chrome extension to convert YouTube short URLs to the full video URLs and optionally auto-redirect.
+A simple Chrome extension to convert YouTube short URLs to the full video URLs and optionally auto-redirect. The extensions is deployed [here](https://chrome.google.com/webstore/detail/youtube-short-redirector/mnijpcchboaebolejillacjcmngnhppg/).
 
 ## Features
 
